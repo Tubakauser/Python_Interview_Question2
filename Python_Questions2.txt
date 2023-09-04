@@ -1,0 +1,99 @@
+"""1] question
+create class Parent and child
+parent attribute are-->first_name,last_name
+parent method is display_full_name() nd display like
+" my name is first_name last_name you have passed"
+child attribute first_name,last_name,school_name
+child method is print_school_name()nd display like
+"my school name is ----"""
+
+"""class Parent:
+	def __init__(self, first_name, last_name):
+		self.first_name = first_name
+		self.last_name = last_name
+
+	def display(self):
+		print("My Name is " , self.first_name , self.last_name)
+
+class Child(Parent):
+	def __init__(self, first_name, last_name, school_name):
+		self.school_name = school_name
+
+		Parent.__init__(self, first_name, last_name)
+		print("My School Name is" , self.school_name)
+a = Child('Tina','Sharma','Hidaya')
+a.display()
+o/p = My School Name is Hidaya
+My Name is  Tina Sharma"""
+
+
+"""2]create class Car take 
+arguments--models,speed,weight,color
+take any name in place of self
+show the o/p 
+models is --
+speed is ---
+weight is ---
+color is ----"""
+
+"""class car():
+	def __init__(self, model, speed, weight, color):
+		self.model = model
+		self.speed = speed
+		self.weight = weight
+		self.color = color
+	def show(self):
+		print("Model is: " + str (self.model))
+		print("speed is: " + str (self.speed))
+		print("weight is: " + str(self.weight))
+		print("color is: " + str(self.color))
+
+x = car("Audi",90,180,"White")
+x.show()
+o/p = Model is: Audi
+      speed is: 90
+      weight is: 180
+      color is: White"""
+
+
+"""3]create class circle nd calculate 
+the area of circle ?"""
+"""class circle:
+	def __init__(self,radius):
+		self.radius = radius
+	def Area(self):
+		print(3.14*self.radius*self.radius)
+c=circle(5)
+c.Area()
+o/p = 78.5"""
+
+#4]how handle the import error in exception ?
+"""#file1:
+    a = 10
+    b = 20
+    x = "Tuba"
+
+#file2:
+try:
+	import file1
+	v = file1.a+file1.b
+	print(v)
+	import file1,fi
+	v1 = fi.a+fi.b
+	print(v1)
+except ModuleNotFoundError:
+	print("File2 is not found")
+o/p = 30
+File2 is not found"""
+
+
+"""5] index error exception 
+how to handle in python take any example"""
+"""try:    
+    a = [1,2,3,4]
+    print(a[3])
+except IndexError:
+    print("Index Out of Bound.")
+o/p = 4"""
+
+
